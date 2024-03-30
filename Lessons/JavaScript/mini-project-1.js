@@ -20,9 +20,10 @@ console.log(sentence3)
 console.log(sentence4)
 
 // 2. Using .innerHTML and getElementById change the innerHTML of an element to be what the variable is
-var heading1 = document.getElementById("heading1")
-var oldText = heading1.innerText
-heading1.innerHTML = "Yes! I finally change your text, YAY"
+var heading1 = document.getElementById("heading1");
+var HelloWorld = heading1.innerText;
+HelloWorld = " Yes! I finally change your text, YAY";
+heading1.innerHTML = HelloWorld;
 
 // I first add a variable called naming same name as the id, then I created a variable called David and I added David to a string
 var naming = document.getElementById("naming");
