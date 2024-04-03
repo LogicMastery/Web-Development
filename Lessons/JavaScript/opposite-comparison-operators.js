@@ -15,6 +15,7 @@ var answer = prompt("What's your exam score? ")
 var test1 = document.getElementById("test")
 var totalscore = answer.toLowerCase()
 
+// I made a mistake in the if statement, I type a semicolon instead of curly braces.
 if(totalscore > 79){
     test.innerHTML = "<strong>Congratz!</strong> YOU PASSED THE EXAM, your going to graduate this year!"
 }else{
