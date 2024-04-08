@@ -22,3 +22,14 @@ if(!isDog){}
 if(isDog != true){
     // this is the false block to execute
 }
+
+var isDog = 1; // True
+var isDog = 0; // False
+
+if(isDog){ // True
+
+}
+
+if(!isDog){
+    // False
+}
