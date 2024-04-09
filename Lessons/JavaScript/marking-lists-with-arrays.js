@@ -11,10 +11,10 @@ console.log(twoItems)
 // .pop() means removing the end of an array
 brother = names.pop()
 console.log(brother)
-// typeof() means checking what type datatype is the variable brother 
+// typeof() means checking what type of datatype is the variable brother 
 console.log(typeof(brother))
 console.log(names)
-// .length means counting how many array in the list
+// .length means counting how many arrays are in the list
 leng = names.length
 console.log(leng)
 // You can even create an array using numbers
