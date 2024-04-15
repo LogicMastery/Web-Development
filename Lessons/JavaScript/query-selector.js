@@ -24,4 +24,3 @@ if(input){
     console.log(input.value)
 
 }
-
