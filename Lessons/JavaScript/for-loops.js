@@ -9,7 +9,7 @@ var words = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, 
 for (var i = 0; i < words.length; i++){
     var currentEmail = words[i].toLowerCase() + "@gmail.com"
 
-    console.log(i, currentEmail)
+    console.log(i, currentEmail) // if your console logging remember to put your console log inside the for loop
     // if(i % 2 == 0){
     //     continue;
     // }
