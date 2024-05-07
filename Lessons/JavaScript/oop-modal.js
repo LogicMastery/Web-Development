@@ -1,8 +1,6 @@
 class Modal{
-constructor(title="Default title", text="Default text"){
+constructor(){
     this.modal = document.querySelector(".js-modal")
-    this.title = title
-    this.text = text
 }
 
 open(){
@@ -13,26 +11,32 @@ close(){
     this.modal.style.display = 'none';
 }
 
-ChangeContent(){
-    if(this.title !== undefined){
+ChangeContent(title, text) {
+    // Assuming you have a modal object defined elsewhere
+    if (this.modal !== undefined) {
+        if (title !== undefined) {
+            document.querySelector(".js-modal-title").innerText = title;
+            this.modal.title = title;
+        }
 
-        this.modal = document.querySelector(".js-modal-title").innerText = this.title
-    }
-
-    if(this.text !== undefined){
-
-        this.modal = document.querySelector(".js-modal-text").innerText = this.text
+        if (text !== undefined) {
+            document.querySelector(".js-modal-text").innerText = text;
+            this.modal.text = text;
+        }
+    } else {
+        console.error("Modal object is undefined.");
     }
 }
 }
+
 
 const openBtn = document.querySelector(".js-open-modal")
 const closeBtn = document.querySelector(".js-close-modal")
-const modal = new Modal("New Title", "New Text in here") 
+const modal = new Modal("Title", "text in here") 
 
 openBtn.addEventListener('click', function(event){
     modal.open()
-    modal.ChangeContent()
+    modal.ChangeContent("Title here", "My new text is here")
 })
 
 closeBtn.addEventListener('click', function(event){
