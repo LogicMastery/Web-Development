@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOP Modal</title>
+    <style>
+        .modal{
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            border: 1px solid black; 
+            background-color: white;
+            box-shadow: 5px 5px #000;
+            width: 80%;
+            max-width: 800px;
+            padding: 20px;
+            transform: translate(-50%, -50%);
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>OOP Modal</h1>
+    </main>
+
+    <div class="modal js-modal">
+
+        <h1 class="js-modal-title">This is a modal</h1>
+
+        <p class="js-modal-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore, deleniti necessitatibus maiores corrupti odit iusto possimus sint, nesciunt, rem sapiente quaerat nisi omnis obcaecati. Repellat dignissimos quisquam iure quo voluptas beatae officia. Doloribus itaque autem fugit architecto pariatur, similique blanditiis minima delectus ut aliquam cum, nemo corporis dignissimos, quia ad?</p>
+
+        <p><button class="js-close-modal">CLOSE MODAL</button></p>
+    </div>
+
+    <button class="js-open-modal">OPEN MODAL</button>
+    
+    <script src="../../Beginner/oop-modal.js"></script>
+</body>
+</html>
